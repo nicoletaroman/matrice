@@ -1,9 +1,13 @@
 a=[]
 n=int(input('dati dimensiunea matricei ='))
-if n>=2 and n<=10:  
-    for i in (0,n):
-        k=int(input('dati elementele='))
-        a.append([k])
+k=[]
+e=[]   
+f=[]
+for o in range(0,n):
+    for i in range(0,n):
+        x=int(input('Dati elementul='))
+        f.extend([x])
+a.append(f)
 
 print(a)
 g=[]
@@ -15,8 +19,9 @@ print('suma diag. principala este=',sum(g))
 h=[]
 for i in range(len(a)):
     for j in range(len(a[0])):
-        if i+j=n-1:   #n=5 n-1=4
+        if i+j==n-1:   #n=5 n-1=4
             h.append(a[i][j])
+print(h)
 print('suma diag. secundara este=',sum(h))
 u=[]
 for i in range(len(a)):
